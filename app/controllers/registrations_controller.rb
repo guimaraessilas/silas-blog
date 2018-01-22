@@ -1,5 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
-
+/
     before_action :one_admin_registered?, only: [:new, :create]
     
     protected
@@ -11,5 +11,5 @@ class RegistrationsController < Devise::RegistrationsController
         redirect_to new_admin_session_path
       end  
     end
-  
+ / 
   end
