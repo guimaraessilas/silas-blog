@@ -10,12 +10,12 @@
         <%= raw(post.body).truncate(358) %>
       </div>
       <div class="text-center">
-        <%= link_to "READ MORE", post_path(post) %>
+        <%= link_to "Continuar...", post_path(post) %>
       </div>
       <% if admin_signed_in? %>
-        <%= link_to "Show", post_path(post), class: "btn btn-primary" %>
-        <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
-        <%= link_to "Delete", post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+        <%= link_to "Mostrar", post_path(post), class: "btn btn-primary" %>
+        <%= link_to "Editar", edit_post_path(post), class: "btn btn-default" %>
+        <%= link_to "Deletar", post_path(post), class: "btn btn-danger", data: {:confirm => "Tem certeza?"}, method: :delete %>
       <% end %>
       <hr />
     </div>
